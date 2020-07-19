@@ -1,0 +1,1273 @@
+  		L = 1
+~history of JAVA
+->Java was developed by James Gosling at Sun MicroSystem.
+~Java is a bread of coffe.
+~Java orginiated at Sun Microsystem ,inc. in 1991.
+~Vinod Khosla was the co-founder of the sun componey.
+~On January 27,2010.Sun was acquired by Oracal Cororation. 
+~Java is a platform independent lang.
+~Plat is a environment in which we run the program.
+~Operating sys. is a plat from to run a program.
+~Any Program which can be run any any OS can be called as platform independent.
+~JAVA is a platform independent.
+=============================================
+# Java Is Every where
+~Java resides in mobile, lient machine, server machine ,embedded device , smart phone, cloud etc.
+~It shares the same basic features of the language and libraries.
+~Principle of java is (Write Once , Run Any where[WORA])
+=============================================
+# What so you mean by Libraray?
+~Java Lib. is a collection of predefined classes.
+~You can use these classes either by enheriting them or by instantiaing them.
+=============================================
+#Java flavours
+~JAVA SE(core java)
+~JAVA EE(advance java)
+~JAVA ME(Micro edition for phone
+...........Many more..
+=============================================
+Packeges :-related classes are Kept in one group and that group is called as packeges.
+
+# Features of java
+~Simple 
+~Object oriented language. 
+~Distributed(Can be run in any platform,can run the java application online)
+~Interpeted(It is an interprited lang. rather then compile language ,prog. is run by hte interpriter)
+~Robust(Can handle any situation))
+~Secure(refernce variable pointer.)
+~Portable(Can be run in any platform or OS)
+~Multi-threaded(Multitasking ex:- Playing game use stopwatch)
+~Garbage-Collector(delete the data automatacally by identifying)
+-------------------------------------------------
+			L = 2
+# Compile and run 
+~How to compile?  hello.java -> hello.class(is also called as byte code )
+~How to Run ? Hello.class -> JVM (it has interpreter (and it act like a jusdt-in-time coompiler)) -> OS
+~interpreter -> Will read one line and transalate them and send it to OS Then Os will read that byte code and send then send the info. to interpreter to send an another line of code.
+
+JVM is a software it is dependent on OS.
+ Inside a JAVA folder you will see two folder,one is for jdk and another is for jre.
+JDK - Java developer kid.
+JRE - Java run time environment
+
+JDK:-
+~Java Developer Kit contains tool need to develop java programs.
+~These tools could be compiler(java.exe),Application Launcher(java.exe),etc
+
+JRE:- 
+~Java RunTime Environment
+~It contains JVM  nas java package Classes(Java Library).
+
+JVM :-
+~JVM is platform dependent
+~The java virtual machine provides a platform-independent way of executing code.
+~JVM Interprets the byte code into the machine code depending upon the  underlaying operating system and hardware combination.
+---------------------------------------------------------------
+			L = 3
+---------------------------------------------------------------
+# Remember
+~Java is case sensitive language like c and c++
+~Java is nearly 100% Object Oriented Language.
+~In java , it is not possible to make a function which is not a member of an any class (as we can do in C++)
+~When ever you will make a function in java it will be the member function of any class.
+
+##############################################################
+***First Program
+public class HelloWorld
+{
+ public static void main(Strings[] args)
+ {
+  System.out.println("Hello World");
+ } 
+}
+
+-> HelloWorld when ever there will be more then one word be use Camel case for better redeability.
+
+->In this there are 3 HelloWorld , String , System this two are predefined.
+
+->The name of the class shoud be same as file name.
+
+->In the main functuion should be there in any class.
+->Function can't be a non member function 
+->main function should be there in class even if the program is small.
+
+-> ! public static void main(String[] args)
+   # public ->so that the main funciton should be called by JVM through outside. 
+   # static ->
+
+	Normally wen you are making a function and you are not writing static member hten it is calles instance member function. 
+	Instance means Object.
+	
+  # Arguments (Strings[] args)
+    
+
+  # System -> Is an predefine class it is a class wwhenever  there is a . after a class defenately we are accesing statick member of a class. Static member can be variable function
+
+  #out -> Out is an static reference variable and it will repressent an object , out is like a pointer. Out is refering to an object.
+
+  # println -> It is used to pring the string .
+
+-> When ever we will create a identifier the space will not be allowed 
+
+->JAVA Developer uses a comel case notation.
+
+->In this there is an outer class when we create another class inside the outer class is known as inner class.
+
+->Rules Of inner class:-
+Inner class can be any 4 of Access specifier.
+
+->Rules Of outer class:-
+Outer calss can only be public or default.
+
+{{[[  THIS WILL BE CLEAR IN PACAKAGES TOPIC  ]]}}
+
+
+##############################################################
+~Access specifier means :- public , private , protected and Default is an example of Access specifier.
+
+~Default is also an Access specifier when we don't write any Access specifier like public , private , protected .
+
+-> In JAVA there are (Four) 4 Access specifier.
+1.PUBLIC
+2.PRIVATE
+3.PROTECTED
+4.DEFAULT(Means when we don't write Access specifier then it is an Access specifier)
+
+--------------------------------------------------------------
+		L-4 (Data types and Key words)
+--------------------------------------------------------------
+ Keywords:-
+	abstract
+	assert
+	boolean
+	break
+	byte
+	case
+	catch 
+	char
+	class
+	const
+	continue
+	default
+	do
+	double
+	enum
+	else
+	extends
+	false
+	final
+	finally
+	float
+	for
+	goto
+	if
+	implements
+	import
+	insranceof
+	int
+	interface
+	long
+	native
+	new
+	null
+	package
+	private
+ 	protected
+ 	public
+ 	return 
+	short
+	static
+	strictfp
+	super
+	switch
+	synchronized
+	this
+	throw
+	throws
+	transient
+	true
+	try
+ 	void
+	volatile
+	while
+-----------------------------------
+# Data Type:
+
+ ~Define the set of values and the operation which is going to be happen.
+ Ex:- Student :- it spesifies that what kind of data should be store in data type line Name , roll no ,  address , phone number , mail id
+
+ ~Data type specifies not only data storage but also the kind of operation that can be happend in the program can also spesefies.
+
+* A type identifies a set of values (and their representation in the memory) and a set of operations that trasform these values innto other of that set.
+
+* Java is strongly typed language.(Means there is a importance  of data type .
+
+# TYPES
+ ~Primitive Types
+	We can called it as predefined data types or beltin data types
+
+ ~User-defined Types
+	Is a data types which will be created by us during prog.
+
+	%%  Askey code is from 0 to 255 . 256 askey character are avalable
+
+
+		PRIMITIVE TYPE
+
+Primitive type		Size
+boolean			implementation dependent
+char			16 bits(stores unicode)
+byte			8 bits
+short			16 bits
+int			32 bits
+long			64 bits
+float			32 bits
+double 			64 bits
+
+ #	Variables
+ ! Example 
+  -> int counter;
+(counter is an ordinary variable which containes the integer data .)
+
+  -> double temp;
+(double is a data type temp is an variable of double , temp variable will get 8 bites of memory)
+
+  ->String name;
+(String is a predefine class it is not an predefine data type.
+name of the variable is used to handle the string.)
+
+  ->int[] ages;
+	in this it will show that we are creating an variable will will point the array.
+
+  ->char letter[];
+
+
+ # 	Constants
+
+~integer constant consist of a sequence of digits
+
+~If the constant is to represent a long integer value,it musst be suffixed with an uppercase L or lowercase l.
+
+~If there is no suffix the constant represents 32 bit integer(an int)
+
+~Integer constant can be seperated in the decimal,hexadecimal,octa,or binary format
+ *127
+ *0x7f (0x is a prefix which indicate 7f base is 16)
+ *0177 (0 indicates that it is an octal number)
+ *0b01101100 (0b is a prefix which 0b indiactes that it is an binary number)
+
+-----------------------------------------------------------
+		L=5 Type conversion
+-----------------------------------------------------------
+ #	Comments
+~ Block style comments begin with /* and terminated with */ that spans multiple lines.
+
+~Line style comments begin with // and terminate at the end of the line.
+
+~Documentation style comments begin with /** and terminate with */ that spans multiple line.
+They are generally created using the automatic documentation generation tool.
+
+ #	Conversion
+
+~Every expression written in the java programming language has a type that can be dedeuced from the structure of the expression and the types of the literals,variables and methods mentioned in the expression.
+
+#	Widening conversion
+
+int y=3;
+float x=y;//Windening conversion,no error
+
+#	Narrowing Conversion
+
+float x = 3.4f; 
+( f is a suffix to make ta varable float if we will not write f then it will be Double .)
+
+int y = x;//narrowing conversion,error
+int y = (int)x; //no error 
+[ CASTING (int)x in this int is an type casting it will act just like an integer ]
+float k=3.5; //narrowing conversion , error
+float k=3.5f; //no error
+
+ #	Permitted Conversions
+~byte to short , int , long , float or double
+~short to int , long , float or double
+~char to int , long , float or double
+~int to long , float or double
+~long to float or double
+~float to double 
+-----------------------------------------------------------
+		L=6  Classes and Objects in java
+-----------------------------------------------------------
+ Q) Why Class?
+ @ Primitive data type (are int , char , float or double)
+ @ Non-Primitive data type
+
+OOPS phylosafy is that realated to one entity all the enfo should be stored in one place. To this kind of stuff we create classes  
+
+ # Class
+~ Class is a description of an object's property and behaviour.
+ propertes are like student roll no. , name ,mobile no. & behaviour means method or funtion through which the data should be handled.
+~ Class basically is a discription , what kind of variable  , propertes and the methods.
+
+~ Creating calss is an good as creation data type.
+
+~ Class is defining a category of data
+
+# Object
+
+~ Object is a real world entity.
+~ Object is an instance of a class.
+~ Object consumes memory to hold property values.
+
+~ Object is an memory block inside which we will store the data in the object.
+
+# Class
+ Q ) Define a class Box with length , breadth and height as member variables.Also define seetDimension() and showDimension() as member functions.
+
+package saurabh_sh;
+
+public class Box {
+	private int length , breadth , height; //These are called as properties
+	public void setDimension(int l , int b ,int h) //setDimension is an Methords.
+	{length = l;
+	breadth = b;
+	height = h;
+	}
+	public void showDimension() //showDimension is an Methords.
+	{
+		System.out.println("l="+length);
+		System.out.println("b="+breadth);
+		System.out.println("h="+height);
+	}
+}
+class example{
+	public static void main(String[] args) {
+		Box smallBox = new Box();
+		smallBox.setDimension(12,10,22);
+	}
+}
+==================================================================
+public class Box {
+	private int length , breadth , height; //These are called as properties
+	public void setDimension(int l , int b ,int h) //setDimension is an Methords.
+	{length = l;
+	breadth = b;
+	height = h;
+	}
+	public void showDimension() //showDimension is an Methords.
+	{
+		System.out.println("l="+length);
+		System.out.println("b="+breadth);
+		System.out.println("h="+height);
+	}
+	public static void main(String[] args) {
+		Box smallBox = new Box();
+		smallBox.setDimension(12,10,22);
+		smallBox.showDimension();
+	}
+}
+
+
+
+# Creating Objects in  java
+
+~ In C++
+ >Box b1;
+ >Box *p=new Box();
+
+~ In JAVA
+ > Box smallBox = new Box(); we can create a object only by using new command.
+  smallBox is a reference. refernce variable is use to handle the object.
+ 
+
+----------------------------------------------------------------
+		L = 7 Static Members in JAVA
+----------------------------------------------------------------
+
+ # In JAVA 
+ ~ Static member variable
+ ~ Static member function
+ ~ ..and not static variable in methods
+ ~ ..but we can have static inner class
+ ~ We can't make a static variable inside FUNCTION.
+ ~ Is we will write a class inside a class called as static inner class & if we include static it means static inner class.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+package saurabh_sh;
+
+public class Static_mem {
+	int x;//instance variable  means Object
+	static int y; //static member variable to access the static variable we have to access the object use className.StaticVariable.
+	
+	public void fun1() //instance member function
+	{
+		
+	}
+	public static void fun2() //Static member function
+	{
+		
+	}
+	static class test{ //inner class if static is implemented then it will be static 
+		
+	}
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+package saurabh_sh;
+
+public class Static_mem {
+	int x;//instance variable
+	static int y; //static member variable
+	
+	public void fun1() //instance member function
+	{
+		
+	}
+	public static void fun2() //Static member function
+	{
+		
+	}
+	static class test{ //inner class if static is implemented then it will be static 
+		
+	}
+	public static void main(String[] args) {
+		Static_mem s1=new Static_mem();//This is only use to access the instance variable.
+		Static_mem.y=5; //when ever after the class ( . ) will be there thin we are calling static member. either it will be static member variable or static member function.
+		
+	}
+}
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ # Static variable
+ ~ Static variables are declared in the class using static keyword.
+
+ ~ Static variable are by default initializied to its dafault value
+
+ ~ Static variable has a single copy for the whole class and does not depend on the objects.
+===============================================================
+public static void main(String[] args) {
+		Static_mem s1=new Static_mem();//This is only use to access the instance variable.
+ Static_mem.y=5; //when ever after the class ( . ) will be there thin we are calling static member. either it will be static member variable or static member function.
+		
+===============================================================
+ # Static Function
+ ~ Static functions defined inside the class are qualified with the keyword static.
+
+ ~ Static function can only access static members of the same class
+
+ ~ Static function can be invoked using class name and dot operator.
+  
+ ~ Static member funtion only access Static member not an instance variable.
+
+ EX => Static_mem.fun2(); //Static member funtion only access Static member not an instance variable.
+ 
+ 
+--------------------------------------------------------------
+		L = 8  Wrapper class
+--------------------------------------------------------------
+ # JAVA IS 99% OOP
+ ~ Java is an object-orinted language and as said everything in java is an Object.
+
+	# BUT WHAT ABOUT PREMITIVE
+
+ ~ They are sort of left out in the world of Object , that is , they cannot participate in the object activities.
+
+ # Wrapper classes
+ ~ As a solution to this problem , Java allows you to include the premitive in the family of objects by using what are called wrapper classes.
+
+ ~ There is wrapper class for every primitive data type in java.
+
+ ~ This class encapsulates a single value for the primitive data type.
+
+ ~ For instance the wrapper class for int is Integer , for float is Float , and so on.
+
+ #  Primitive type  ->   # Wrapper Class
+---------------------++--------------------
+    boolean		-> Boolean
+    byte		-> Byte
+    char		-> Character
+    short		-> Short
+    int			-> Integer
+    long		-> Long
+    float		-> Float
+    double		-> Double
+~ In this calsses there is a function
+
+ # valueOf()
+   >Static method.[ Static method are the function for calling this function need not to create an object.] 
+   >Return Object reference of relative wrapper class
+
+public class example
+{
+ public static void main(String[] args)
+ {
+  Integer i1=Integer.valueOf("1011,2");//it will show the data in binary.
+  
+  Double d1=Double.valueOf("3.14");
+  int a=Integer.parseInt("123");
+  double b=Double.parseDouble("12.12");
+  
+  int c=i1.intValue();
+ }
+}
+
+ # parseXxx()
+   >Static method.
+   >Xxx can be replaced by any primitive type
+   >It returns xxx type value
+   >Xxx Is an primitive type  EX -> parseInt,parseFloat;
+
+ # xxxValue() ///It is an instance it will be called by dot.
+   >Instance method of wrapper class
+   >Xxx can be replaced by any primitive type.
+   >Returns corresponding primitive type
+   
+ 
+
+------------------------------------------------------------
+		L = 9 Command Line Arguments
+------------------------------------------------------------
+ # Command Line Arguments
+ ~ A java application can accept any number of arguments from the command line.
+
+echo.java
+
+public class echo
+{
+ public static void main(String[] args)
+ {
+  for(int i=0; i<args.length;i++)
+   System.out.println(args[0]);
+ }
+}
+
+		Sum program
+
+
+public class echo
+{
+ public static void main(String[] args)
+ {
+  int s=0;
+   for(int i=0; i<args.length;i++)
+   s=s+Integer.parseInt(args[i]);
+	System.out.println("Sum is "+s);
+ }
+}
+
+In array the length variable are present.
+args.length means how much data you want to feed in the array that will be printed.
+
+
+-------------------------------------------------------------
+		L = 10 Packages in java
+-------------------------------------------------------------
+
+ # Packages are nothing more than the way we organize files into different directries according to their funtionality , usability as well as category they should belong to
+
+ # Files in one directory ( or package) would have different funtionality from those of another directory.
+
+ >> Example =) files in java.io pacakage do something related to I/O, but files in java.net pacakage give us the way to deal with the Network.
+  
+
+ # Name collision
+ 
+ ~ Packaging also help us to avoid class name collision when we use the same name as that of others.
+
+ ~ The Benefits of using package reflect the easy of maintenance , organization, and increase collaboration among Developers.
+
+ ~ EX ->>Suppose we have a file called HelloWorld.java , and we want to put this file in packageworld.
+
+package world;
+
+public class HelloWorld
+{
+ public static void main(String[] args)
+ {
+  System.out.println("Hello Ravi");
+  }
+}
+
+S:\JAVA_PRO>javac -d . HelloWorld.java
+
+S:\JAVA_PRO>java world.HelloWorld
+Hello Ravi
+
+all this in cmd in this [dot] means in current folder package will be generates and .class file will be saved inside.
+=====
+ # Remember
+======
+ ~ We can have only one public class in a single java file .
+ 
+ ~ Name of the file should be same as of public class.
+ 
+ ~ In absence of public class , any class name can be given to the file name.
+ 
+
+-------------------------------------------------------------
+		L = 11 Use of import in java 
+-------------------------------------------------------------
+ ~ import is a key word in java.
+ ~ It is used to import classes of other packages
+
+			myapp
+	__________________|______________________
+	|					| 
+      Pack1				      pack2
+        |                                        |
+    Example.class                        Student.class
+
+
+
+package pack1;
+import pack2.Student;
+public class Example
+{
+ public static void main(String args[])
+ {
+  Student s1 = new Student();
+  s1.setRollno(100);
+  s1.setName("Ravi");
+  System.out.println("Roll no:"+s1.getRollno());
+  System.out.println("Name:"+s1.getName());
+ }
+}
+
+
+package pack2;
+public class Student
+{
+ private int rollno;
+ private String name;
+ public void setRollno(int r)
+  {rollno=r;}
+ public void setName(String n)
+  {name=n;}
+ public int getRollno()
+  {return(rollno);}
+ public String getName()
+  {return(name);}
+}
+
+------------------------------------------------------------
+		L = 12 Access Modifiers
+------------------------------------------------------------
+ # Java supports four categories of accessibility rules 
+   > private
+   > protected
+   > public
+   > default
+
+ # Modifers can be used for class , member variables and member functions.
+
+ # With Class
+ 
+ ~ Outer class and Inner class
+ ~ For outer class,there can be  only two possibilites , either class is public or just a class which means it is of default type.
+ ~ For inner class any among four access modifiers can be used.
+ ~ 
+public class exam // outer class
+{
+ private int x;
+ public void fun(){}
+ 
+ class Dummy //inner class
+ {
+  
+ }
+}
+  
+  # Remember
+ ~ There can be only one public class in a single java file.
+ ~ The name of the java file must be the same as the name of the public class.
+ ~ Only public class can be accessed directly from oubt side the package.
+ ~ on one java file there will be only one public class.
+
+
+ # Member variable and functions
+ 
+ ~ When member of the class are private , they can not accessed from outside the class body.They are meant to be accessed from the same class in which they are declared.
+ 
+ ~ When members are protected , they can be accessed from any class of the same package and the child class from the other package.
+
+ ~ When member are public , they are accessible from any class of any package.
+
+ ~ When member are default, they are accessible only from the class of same package .
+
+-------------------------------------------------------------
+		L = 13 Constructor in java
+-------------------------------------------------------------
+
+ # Constructor
+
+ ~ Constructor is a member function of a class
+ ~ The name of constructor is same as the name of the class.
+ ~ Constructor has no return type.
+ ~ Constructor over loading is when there is more then one Constructor in the same class.
+ ~
+
+====PROGRAM
+package saurabh_sh;
+
+public class box_Constr {
+	private int l,b,h;
+	public box_Constr()
+	{
+		l=23;b=43;h=54;
+	}
+	public box_Constr(int L,int B,int H)
+	{
+		L=l;B=b;H=h;
+	}
+	public static void main(String[] args)
+	{
+		box_Constr b1 = new box_Constr();
+		box_Constr b2 = new box_Constr();
+		System.out.println(b1);
+		System.out.println(b2);
+	}
+}
+========
+ # Constructor is special
+ 
+ ~ A constructor is a special method tat is used to initialized a newly created object and caalled implicitly , just after the memory is allovated for the object
+
+ ~ It is not mandatory for the coder to erite constructor for the class.
+ 
+ ~ When there is no constructor defined in the class by programmer , compiler implicitly provides a defaukt constructor for the class.
+
+  # Constructor Overloading
+ 
+ ~ Constructor can be parametarized
+ ~ Constructor can be overloaded.
+
+--------------------------------------------------------------------
+		L = 14 Inheritence in java
+--------------------------------------------------------------------
+
+ images in phone
+
+ ~ Object is a real world entity.
+
+ # Syntax
+ 
+class SubClass extends SuperClass
+{
+ /**
+ The new class is known as SubClass(SportsCar)
+ the existing one is known as SuperClass(Car)
+ */
+}
+
+ ~ extends is a keyword
+ ~ Base class means Super Class (parent class)
+ ~ Derived Class means Sub Class (child class) 
+
+ # Remember
+ ~ In the java programming language , each class is allowed to have one direct superclass , and each superclass has  the potential for an unlimited number of subclasses.Multiple inheritence is not avalible.
+ ~ Private member of the superclass are not accessible by the subclass and can only be indirectly acccessed.
+ ~ Members that have default accessibility in the superclass are also not accessible by subclasses in other packages.
+
+
+ # Java Supports
+  >Single Inheritance = one SubClass one SuperClass
+  >Multilevel Inheritance = class [] ->subclass[] ->sub.subclass
+  >Hierarchical Inheritance = one superclass(Person) having more then one parent subClass(teacher & Student)
+
+
+
+====================================================================
+package saurabh_sh;
+
+public class Student extends person {
+	private int rollno;
+	public void setRollno(int r)
+	{
+		rollno=r;
+	}
+	public int getRollno()
+	{
+		return(rollno);
+	}
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		s1.setRollno(100);
+		s1.setName("Ravi");
+		s1.setAge(20);
+		System.out.println("Roll no. = "+s1.getRollno());
+		System.out.println("Name = "+s1.getName());
+		System.out.println("Age = "+s1.getAge());
+	}
+
+}
+
+package saurabh_sh;
+
+public class person {//Student class mai baki pro. hai
+	private int age;
+	private String name;
+	public void setAge(int a)
+	{
+		age=a;
+	}
+	public void setName(String n)
+	{
+		name=n;
+	}
+	public int getAge() 
+	{
+		return(age);
+	}
+	public String getName()
+	{
+		return(name);
+	}
+}
+===================================================================
+
+-----------------------------------------------------------------
+		L = 15 Initialization block in java
+-----------------------------------------------------------------
+
+ # Initialization Block
+ ~ There are two type of initialization blocks
+  >Instance Initialization Block //Instance member function or variable belong to object or instance. 
+  >Static Initialization Block //Static member function or varialble belong to Whole class.
+ 
+ * Instance initialization block will make a object of a class.
+`````````````````````````````````````````````````````````````````
++++++++++++++  Instance initialization block  ++++++++++++++++++
+
+public class Test {
+ private int x;
+ {
+  System.out.println("Initialization Block:x="+x); //x=0 
+  x=15;
+ }
+ public Test(){
+  System.out.println("Constructor:x="+x); //x=15
+ }
+ public static void main(String[] args){
+  Test t1 = new Test();
+  Test t2 = new Test();
+ }
+}
+`````````````````````````````````````````````````````````````````
+
+ # Instance Initialization Block
+ ~ An instance initializer or Initialization block declared in a class is executed when an instance of the class is created.
+ ~ return keyword cannot be used in Initialization block
+ ~ Instance initializers are permaitted to refer to the current object via the keyword this and to use the keyword super.
+
+
+$$$$$$$$$$$$$$$$$  Static initialization block $$$$$$$$$$$$$$$$$
+
+public class Test
+{
+ private static int k;
+ static
+ {
+  System.out.println("Static Initialization Block:k="+k);
+  k=20;
+ }
+ public static void main(String[] args)
+ {
+  new Test();
+ }
+}
+
+ * Staic initialization block can only access static block of class.
+
+ static block is use to run the prog before the creation of the object .
+ Static block run onece in single class. 
+$$$$$$$$$$$$$$$ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+ ~ A static initializer declared in a class is executed when the class is initialized.
+ ~ Static initializers may be used to initialize the class variable of the class
+ ~ return keyword cannot be used in static Initialization block
+ ~ This or super can not be used in staic block.
+ 
+INITIALIZWE MEANS:- THAAT YOU ARE MAKING A CLASS OBJECT 1st TIME OR USING className.(dot)accessing Static member , variable or function.  
+---------------------------------------------------------------------
+		L = 16 Overloading and Overrinding in java
+---------------------------------------------------------------------
+ # Function Overloading in java
+ ~ If two methods of a class (whether both declared in the same class ,or both inherited by a class , or one declared and inherited) have the same name but signatures that are not same , then the method name is said to be overloaded.
+
+ ~ Method overloading is a way to implement polymorphism.
+ 
+EXAMPLE:-
+class A
+{
+ public void f1(int x)
+ {
+  System.out.println(class A)
+ }
+}
+class B extends A
+{
+ public void f1(int x, int y)
+ {
+  System.out.println(class B)
+ }
+}
+class example
+{
+ public static void main(Strings[] args)
+ {
+  B obj=new B();
+  obj.f1(5);
+  obj.f1(12,43);  
+ }
+}
+# -> In function overloading name of the function whould be same and the aregument can be differ this is called as polymorphism.
+
+------------------
+ # Overriding in Java
+
+ ~ Method overriding is defining a method in subclass with the same signature with specific implementation in respect to the subclass.
+ 
+ Q)  Why Overriding?
+  
+class A //Car
+{
+ public void f1(int x)
+ {
+  System.out.println("class A");
+ }
+}
+class B extends A //SportsCar
+{
+ public void f1(int x)
+ {
+  System.out.println("class B");
+ }
+}
+class example
+{
+ public static void main(Strings[] args)
+ {
+  B obj=new B();
+  obj.f1(5);  
+ }
+}
+
+
+------------------------------------------------------------------
+		L = 17  FINAL CLASS IN JAVA
+------------------------------------------------------------------
+ # The final keyword
+ ~ final instance variable.
+ ~ final static variable.
+ ~ final local variable.
+ ~ final class.
+ ~ final methods.
+----$$$$$$$$$$$$$$$$ Own notes  $$$$$$$$$$$$$$$$$$$$$$$-------
+ > final instance & static variable :-When you are making a variable in the class it may be instance & static variable , If final keyword is initialized before the variable then it will be (final instance & static variable.)
+
+ > final local variable :- inside the function you are making a variable then it will be local variable. If final keyword is initialized before the variable then it will be (final local variable .)
+
+ > final class :- If final keyword is initialized before the variable then it will be final class.
+ 
+ > final methods :- If final keyword is initialized before the variable then it will be final methods.
+
+))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+
+Programming
+
+package saurabh_sh;
+/*
+class moreDummy
+{
+ public final void someFun()
+  { }
+}
+class Some extends moreDummy
+{
+  public void somefun() //error because final function cannot be accessed by the other class.
+  {}
+}
+
+*/
+final class Dummy//in final class you can not create final class
+{
+ 
+}
+public class finalKeyword
+{
+	private final int x;//final instance member variable &then it will be blank  variable.
+	finalKeyword()//constructor
+	{x=5;}
+
+	private final static int y;//final static member variable.
+	static
+	{y=12;}
+
+	public void fun()
+	{final int k;}
+
+	public static void main(String[] args)
+	{
+		finalKeyword fn =new finalKeyword(); 
+   
+	}
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ # final instance variable
+ 
+ ~ A java variable can be declared using the keyword final. Then the final variable can be assigned only once.
+ ~ A variable that is declared as final and not initialized is called a blank final variable .A blank variable forces either the constructors to initialize it or initialization block  to do this job.
+
+ # final static variable
+ ~ Static member variable when qualified with final keyword,it becomes blank until initialized.
+ ~ Final static variable can be initialized during declaration or within the static block.
+
+
+ # final local variable
+ ~  Local variable that are final must be initialized before it's use, but you should rember this reule is applicable to non final local variable too.
+ ~ Once they are initialized , can not be altered.
+
+ # final class
+ ~ java classes declared as final cannot be extended . Restricting inheritance!
+
+ # final method
+ ~ Method declared as final connot be overridde.  
+
+
+
+--------------------------------------------------------------------
+		L =18 THIS KEYWORD IN JAVA
+--------------------------------------------------------------------
+ # this keyword
+ ~ The this object reference is a local variable in instance member methods referring the caller object.
+ ~ this keyword is used as a reference to the current object which is an instance of an current class.
+ ~ The this reference to the current object is useful in situations where a local variable hides,or shadows , a field with the same class.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+package saurabh_sh;
+
+class box1
+{
+ private int l,b,h;
+ public void setDimension(int l,int b ,int h)//instance member function.
+  {
+	 this.l=l;
+	 this.b=b;
+	 this.h=h;
+  }
+  public void sendBox()
+  {
+	 GiftTaker gf = new GiftTaker();
+	 gf.acceptGift(this.b1);
+
+  }
+
+}
+public class thisKeyword
+{
+ public static void main(String[] args)//Static member function.
+ {
+  box1 b1=new box1();
+  b1.setDimension(12,10,5);
+  System.out.println(b1);
+ }
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ # this 
+ ~ If a method needs to pass the current object to another method,it can do so using the this reference.
+ ~ Note that the this  reference cannot be used in a static context,as static code is not executed in the context of any object
+ ~ this is used to represent the coller object.
+
+--------------------------------------------------------------------
+		L = 19 SUPER KEYWORD IN JAVA
+--------------------------------------------------------------------
+ # super keyword
+ ~ In inheritance , subclass object when call an instance member function of subclass only,function contains implicit reference variables this and super both referring to the current object(Object of class).
+
+ ~ The only difference  in this and super is :-
+    >this reference variable is of subclass type
+    >super reference variable is of superclass type
+
+ ~ If your method overrides one of its superclass's method , you can invoke the superclass version of the method through the use of the keyword super.
+ 
+ ~ It avoids name conflict between member variables of superclass anf subclass.
+
+~~~~~~~~~~	Program
+package saurabh_sh;
+
+class Super
+{
+	int x;
+	int z;
+	public void f1()
+	{
+		
+	}
+}
+class Sub extends Super
+{
+	int z;
+	public void f1()
+	{
+		//this.f1();
+		super.f1();
+	}
+	public void f2()
+	{
+		int z;
+		z=2;
+		this.z=3;
+		x=4;
+		super.z=13;
+	}
+}
+
+public class superKey {
+	public static void main(String[] args) {
+		Sub obj = new Sub();
+		obj.f1();
+		obj.f2();
+		System.out.println(obj);
+	}
+	
+}
+~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+
+--------------------------------------------------------------------
+		L=20 Static member in inheritence of java
+--------------------------------------------------------------------
+
+Members > in soome class members are variable , Function.
+
+ # Static member functions
+ ~ A class C inherits from its direct superclass all concrete methods m(both static and instance) of the superclass.
+ ~ No methods declared in c has some signature.
+
+//////////////////////////////////////////////////////////////
+?** Staic function :- Function Hiding
+Non-Static function :- Function overriding.
+class Parent{
+	public static void f1()
+	{Systrm.out.println("Hello");}
+}
+class Child extends Parent{
+//Function Hiding it will inherit the fun if the fun name is different from the sub class.  
+	publlic static void f1()
+	{System.out.println("Yo Man");}
+}
+public class Example{ 
+	public static void main(String[] args){
+	Child.f1();
+	}
+}
+ 
+
+////////////////////////////
+
+ # Function Hiding
+ ~ If subclass has a method m with the same signature as of the method present in the superclass , then method  m hides the method of superclass.
+
+ ~ Non Static function is called as fun. Overriding.
+
+
+ # Remember
+ ~ It is a compile-time error if a static method hides an instance method.
+ ~ It is a complile-time error if an instance method overrides a static method.
+
+
+ # Static members variable 
+ ~ Statc member variables doesn't inherit.  bit it can be hide
+
+
+/
+
+$$$$$ Program
+
+class Parent
+{
+	static int y=2;
+	int z=32;
+}
+class Child extends Parent
+{
+static
+ {y=12;}
+}
+public class example
+{
+ public static void main(String[] args)
+ {
+  System.out.print("y="+Child.y);
+ }
+}
+//////////////////////////////////////////////////////////////////////
+------------------------------------------------------------------
+		L = 21 Constructors in inheritance in java.
+-----------------------------------------------------------------
+
+ # Constructor in inheritence
+ ~ Constructors are not inherited by subclass
+ ~ Sub class constructor involes constructor of super class.
+ ~ Explicit call to the super class constructor from sub class constructor can be made useing super().
+ ~ You can write a subclass constructor that invokes the constructor of the superclass,either implecitly or by using the keyword super.
+
+
+ Q) What happens when object of subclass created?
+ 
+ Q) What is the role of constructor?
+
+ In the inheritance both the class will be getting memory while creating an object of subclass. 
+
+ Construcor main work is to do initialization.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\////////////////////////
+class A
+{
+ int a;
+ public A(int x)//paramiterised constructor.
+ {
+  a=x;  
+  Sustem.out.println("A");
+ }
+}
+class B extends A
+{
+int b;
+ public B()
+ {
+  super(23);//Repersent the parent constructor 
+//and have to pass the argument loke 232.
+  System.out.println("B");
+ }
+}
+class example
+{
+ public static void main(String[] args)
+ {
+ B obj = new b();
+ }
+}
+
+////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+ # Scenarios
+ ~ Implicit constructors in superclass and subclass.
+ ~ Implicit constructors in subclass and explicit constructor in superclass.
+ ~ Implicit constructors in superclass and explicit constructor in subclasss.
+
+ # Parameterized Constructors
+ ~ Subclass constructor may take arguments for its use as well as for the constructor of superclass. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
